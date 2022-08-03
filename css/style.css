@@ -60,7 +60,7 @@ body {
   margin: 0 auto;
 }
 
-.card-content h3 {
+.card-content h2 {
   color: #22aa4b;
   text-align: center;
 }
@@ -127,6 +127,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-size: 1.2rem;
 }
 
 button a {
@@ -223,6 +224,33 @@ input {
   align-items: center;
   cursor: pointer;
   color: #fff;
+}
+
+.facebook-icon {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.linkedin-icon {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.twitter-icon {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.instagram-icon {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.facebook-icon:hover,
+.linkedin-icon:hover,
+.twitter-icon:hover,
+.instagram-icon:hover {
+   color: #c11d39;
 }
 
 @media (max-width: 960px) {
