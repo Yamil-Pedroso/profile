@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Space+Mono&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c11d39;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+
+.container h3 {
+  color: #474747;
+}
+
+.card-profile {
+  width: 1200px;
+  height: 650px;
+  padding: 20px;
+  box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.47);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.card-profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #c11d39;
+}
+
+.card-content {
+  width: 1200px;
+  height: 450px;
+  padding: 20px;
+  box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.47);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.card-content img {
+  display: block;
+  margin: 0 auto;
+}
+
+.card-content h3 {
+  color: #22aa4b;
+  text-align: center;
+}
+
+.card-1, .card-2, .card-3 {
+  width: 300px;
+  height: 450px;
+  padding: 20px;
+  box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.47);
+  border-radius: 10px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover {
+  transform: scale(1.1);
+}
+
+.behind-div {
+   width: 100%;
+   height: 500px;
+   background-color: #172540;
+   position: absolute;
+   top: 500px;
+}
+
+.profile p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.img-profile {
+
+}
+
+button {
+  background-color: #c11d39;;
+  color: #696969;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #172540;
+}
+
+.follow-me {
+  background-color: #172540;
+  color: #fff;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+  display: flex;
+  padding: 0
+}
+
+ul li {
+  list-style: none;
+  padding: 0;
+}
+
+ul li a  {
+  color: #23415e;
+  text-decoration: none;
+  margin: 10px;
+}
+
+/* SUBS EMAIL */
+.email-subs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  margin-top: 160px;
+  background: #ce6183;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  position: relative;
+}
+
+.email-subs img {
+  position: absolute;
+  right: 600px;
+  z-index: 1;
+  bottom: 430px;
+}
+
+.sug {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    width: 550px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: -3px 33px 57px -7px rgba(31,84,193,0.10);
+}
+
+ .sug {
+    color: #000;
+}
+
+.sug h3 {
+  color: #06283D;
+  font-size: 3rem;
+}
+
+.sug p {
+  color:  #777777;
+  width:70%;
+}
+
+input {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  color: #ccc;
+  width: 260px;
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+.subscribe {
+  width: 150px;
+  height: 50px;
+  background: #1d1a36;
+  font-size: 15px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
